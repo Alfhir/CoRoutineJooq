@@ -1,0 +1,17 @@
+spring:
+  jooq:
+    sql-dialect: postgres
+  jdbc:
+    url: jdbc:postgresql://localhost:5432/demo
+    username: postgres
+    password: postgres
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/demo
+    username: postgres
+    password: postgres
+  flyway:
+    url: jdbc:postgresql://localhost:5432/demo
+    user: postgres
+    password: postgres
+    enabled: false
+    schemas: demo
