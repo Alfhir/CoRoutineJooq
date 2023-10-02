@@ -73,10 +73,10 @@ dependencies {
 	// test
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")
+	testImplementation("io.mockk:mockk:1.13.8")
 }
 
 flyway {
-	println("Configuring Flyway")
 	driver = dbConfig.driver
 	url = dbConfig.jdbcUrl
 	user = dbConfig.username
