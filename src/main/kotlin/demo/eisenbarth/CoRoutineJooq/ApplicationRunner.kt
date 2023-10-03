@@ -14,6 +14,5 @@ class ApplicationRunner(@Qualifier("jdbcContext") private val jdbcContext: DSLCo
         printTableInformation()
     }
 
-    // Meta API relies on JDBC
     private fun printTableInformation(): Unit = jdbcContext.meta().tables.forEach { table -> println("Table: ${table.name}") }
 }

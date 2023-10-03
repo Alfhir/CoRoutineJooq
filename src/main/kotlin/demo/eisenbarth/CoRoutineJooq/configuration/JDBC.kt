@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.jdbc.datasource.DriverManagerDataSource
 
+// This is only needed for using the Meta API in the Application runner.
 @Configuration
 class JDBC(
     @Value("\${spring.jdbc.url}") val databaseUrl: String,
