@@ -1,5 +1,59 @@
 # Getting Started
 
+## How to run this
+
+### Start Postgres
+
+To run this locally you need to start Postgres. We will assume that you already have the Docker software installed on your machine. If not, you will find instructions to install Docker below.
+
+#### Step 1: Check if Docker is installed
+
+You can verify if Docker is installed by opening a terminal and typing:
+
+> docker --version
+
+If Docker is installed, its version will be displayed in the terminal. If not, follow the instructions in the next section to install Docker.
+
+#### Step 2: Install Docker
+
+If Docker is not installed on your machine, follow these instructions to install it:
+For Ubuntu:
+
+> sudo apt-get update
+> sudo apt-get install docker-ce
+ 
+For other Linux distributions or operating systems, refer to the official Docker documentation specific to your OS: Docker docs
+
+#### Step 3: Verify that Docker is running
+
+> systemctl status docker
+
+If Docker is not running, start it with the command:
+
+> sudo systemctl start docker
+
+#### Step 4: Running your PostgreSQL Database with Docker
+
+Once Docker is installed and running, navigate to the folder containing the docker-compose.yml.
+
+> cd /path_to_postgres_folder
+
+If you use IntelliJ IDEA you can just open the compose file and click on the green arrows on the left to run it. 
+
+If not, you can open a terminal in the folder and type:
+
+> docker-compose up
+
+This command starts your PostgreSQL database in a Docker container. You should now be able to interact with your database (for example, add it as a Datasource with IDEA and check if migrating the database with Flyway is working).
+
+For additional instructions or support, refer to the official Docker documentation.
+
+### Start the Application
+
+TODO
+
+---
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
