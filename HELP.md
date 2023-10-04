@@ -1,10 +1,18 @@
-# Getting Started
+# HELP
 
-## How to run this
+This page is for helping you out with some things you might trip over, for example if you get an error like
+ 
+> Error occurred while executing flywayMigrate
+Unable to obtain connection from database (jdbc:postgresql://localhost:5432/demo) for user 'postgres': Connection to localhost:5432 refused.
 
-### Start Postgres
+the reason might be, that you'll need to start a postgres database first. 
 
-To run this locally you need to start Postgres. We will assume that you already have the Docker software installed on your machine. If not, you will find instructions to install Docker below.
+The build relies on this, because it tries to migrate the database with Flyway before it generates JOOQ code from it.
+The easiest way would be to use the accompanied docker-compose file as explained below (unless I use Revolut's Docker-JOOQ plugin to make your life easier). 
+
+## Starting Postgres
+
+To run this locally you need to start Postgres. I will assume that you already have the Docker software installed on your machine. If not, you will find instructions to install Docker below.
 
 #### Step 1: Check if Docker is installed
 
@@ -47,10 +55,6 @@ If not, you can open a terminal in the folder and type:
 This command starts your PostgreSQL database in a Docker container. You should now be able to interact with your database (for example, add it as a Datasource with IDEA and check if migrating the database with Flyway is working).
 
 For additional instructions or support, refer to the official Docker documentation.
-
-### Start the Application
-
-TODO
 
 ---
 
