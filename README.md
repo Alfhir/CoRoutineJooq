@@ -6,7 +6,7 @@ I'm a big fan of [jOOQ](https://www.jooq.org/) and  [Kotlin](https://kotlinlang.
 
 If you plan on using Reactive programming in a real project, using Kotlin will make your life a lot less miserable. 
 
-Spring has great modules for reactive (relational) database access, but using JOOQ is not as represented as it should be imho.
+Spring has great modules for (reactive) database access, but using JOOQ to access relational databases is not as represented as it should be imho.
 
 ## Built With
 
@@ -60,7 +60,7 @@ Then change into the directory:
 
 As this is a Spring Boot project, you would run your application using gradle:
 
-./gradlew bootRun
+> ./gradlew bootRun
 
 Ensure you have the database installed and running, see [Help File](HELP.md).
 
